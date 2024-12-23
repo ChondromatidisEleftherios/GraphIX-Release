@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
+
+*
+{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+body
+{
+	min-height: 100px;
+	background: #0c154b;
+}
+
+.cont
+{
+	display:flex;
+	align-items: center;
+	justify-content: space-around;
+	height: 155px;
+	position: relative;
+	overflow: hidden;
+
+}
+
+form 
+{
+	z-index:3;
+}
+.cont2
+{
+	z-index: 3;
+	display:flex;
+	align-items: center;
+	justify-content: space-around;
+	height: 95px;
+	display:flex;
+	flex-direction: column;
+}
+
+.cont3
+{
+	z-index: 3;
+	display:flex;
+	align-items: center;
+	justify-content: space-around;
+	height: 95px;
+	display:flex;
+	flex-direction: column;
+}
+
+.cont4
+{
+	z-index: 3;
+	display:flex;
+	align-items: center;
+	justify-content: space-around;
+	height: 95px;
+	display:flex;
+	flex-direction: column;
+}
+
+.cont5
+{
+	z-index: 3;
+	display:flex;
+	align-items: center;
+	justify-content: space-around;
+	height: 95px;
+	display:flex;
+	flex-direction: column;
+}
+
+.btn1, .btn2, .btn3, .btn4
+{
+	z-index: 3;
+	color: ghostwhite;
+	text-decoration: bold;
+	background: #4a1abf;
+	border-radius: 60px;
+	width: 210px;
+	height: 70px;
+	border: none;
+	outline: none;
+	box-shadow: inset 25 0 75 0 cyan;
+	box-shadow: inset 25 0 75 0 cyan, 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	transition: ease-out 0.2s, width 0.33s, height 0.33s;;
+	font-size: 17px;
+	font-family: 'Gugi' !important;
+	text-align: center;
+}
+
+.btn1:hover, .btn2:hover, .btn3:hover, .btn4:hover
+{
+	z-index: 3;
+	box-shadow: inset 241px 0 0 0 cyan;
+	cursor: pointer;
+	border-radius: 60px;
+	height: 82px;
+	font-size: 21px;
+	width: 240px;
+}
+
+
+.bubbles
+{
+	z-index: 1;
+	position: relative;
+	display: flex;
+	filter: blur(3px);
+}
+.bubbles span 
+{
+	position: relative;
+	width: 20px; /*48*/
+	height: 20px; /*48*/
+	background: #4fc2dc;
+	margin: 0 3px;
+	border-radius: 50%;
+	box-shadow: 0 0 0 10px #00ecfc44, 0 0 50px #00ecfc, 0 0 100px #00ecfc;
+	animation: animate 9s linear infinite;
+	animation-duration: calc(75s/var(--i));
+}
+
+.bubbles span:nth-child(odd)
+{
+	background: #6006cf;
+	box-shadow: 0 0 0 10px #6006cf44,
+	0 0 50px #6006cf, 0 0 100px #6006cf;
+}
+
+@keyframes animate 
+{
+	0%
+	{
+		transform: translateY(2vh) scale(0); /*61*/ /*80*/
+	}
+	100%
+	{
+		transform: translateY(-100vh) scale(1); /*58*/ /*-150*/
+	}
+}
+
+
+a
+{
+	text-decoration: none;
+	color: ghostwhite;
+}
+
+
+.bottom
+{
+	display:flex;
+	justify-content: flex-start;
+	margin-left: 30px;
+	margin-top: 5px;
+}
+
+a
+{
+	font-family: 'Gugi' !important;
+	color: dimgrey;
+	text-decoration: underline;
+	font-size: 14px;
+	position: fixed;
+	margin-top: 18px;
+}
+
+.bottom2
+{
+	display:flex;
+	justify-content: center;
+}
+
+.bottom2 p 
+{
+	font-family: 'Gugi' !important;
+	color: #01ecfc;
+	text-decoration: underline;
+	font-size: 14px;
+	text-decoration: none;
+	margin-top: 18px;
+}

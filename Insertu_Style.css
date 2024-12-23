@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
+
+
+
+input
+{
+	border-radius: 50px;
+	font-family: 'Gugi' !important;
+}
+.input_area
+{
+	display: flex;
+	align-items: center;
+	border: 2px solid black;
+	justify-content: center;
+	flex-wrap: wrap;
+	font-family: 'Gugi' !important;
+	font-size: 16px;
+}
+
+
+.btn1, .btn2
+{
+	z-index: 3;
+	color: ghostwhite;
+	text-decoration: bold;
+	background: #4a1abf;
+	border-radius: 60px;
+	width: 210px;
+	height: 70px;
+	border: none;
+	outline: none;
+	box-shadow: inset 25 0 75 0 cyan;
+	box-shadow: inset 25 0 75 0 cyan, 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	transition: ease-out 0.2s, width 0.33s, height 0.33s;;
+	font-size: 17px;
+	font-family: 'Gugi' !important;
+	text-align: center;
+}
+
+.btn1:hover, .btn2:hover
+{
+	z-index: 3;
+	box-shadow: inset 241px 0 0 0 cyan;
+	cursor: pointer;
+	border-radius: 60px;
+	height: 82px;
+	font-size: 21px;
+	width: 240px;
+}
